@@ -1,9 +1,13 @@
 const mainContainer = document.querySelector(".mainContainer");
 const gridSizeSlider = document.getElementById("gridSizeSlider");
+const gridSizeText = document.getElementById("gridSizeText");
+
 let mouseIsDown = false;
 createGrid(gridSizeSlider.value);
+gridSizeText.textContent = `${gridSizeSlider.value} x ${gridSizeSlider.value}`;
 gridSizeSlider.addEventListener("input", (event) => {
   createGrid(event.target.value);
+  gridSizeText.textContent = `${gridSizeSlider.value} x ${gridSizeSlider.value}`;
 });
 function createGrid(gridSize) {
   mainContainer.replaceChildren();

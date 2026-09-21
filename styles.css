@@ -25,6 +25,7 @@ body {
 }
 
 .ui {
+  display: flex;
   flex: 1;
 }
 
@@ -60,6 +61,12 @@ body {
   background: aqua;
   cursor: pointer;
 }
+
+.gridSizeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .parentDiv {
   display: flex;
   flex: 1;
