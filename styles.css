@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+}
+.mainContainer {
+  width: 640px;
+  height: 640px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.ui {
+  flex: 1;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 3px;
+  background: #008eff;
+  height: 10px;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 50%;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: aqua;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: aqua;
+  cursor: pointer;
+}
+.parentDiv {
+  display: flex;
+  flex: 1;
+}
+
+.childDiv {
+  flex: 1;
+}
