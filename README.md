@@ -2,6 +2,8 @@
 
 This project is an Etch A Sketch web application built as part of The Odin Project curriculum.
 
+https://protokol42.github.io/odin-etch-a-sketch/
+
 ## Core Concepts Practiced
 
 ### JavaScript and DOM Manipulation
