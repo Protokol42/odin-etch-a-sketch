@@ -8,8 +8,27 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: wheat;
+}
+.canvas {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+.title,
+#gridSizeText {
+  font-family: "Cabin Sketch", sans-serif;
+  text-align: center;
+  color: #b84a39;
+
+  text-shadow: 3px 3px 0px rgba(74, 59, 50, 0.25);
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 .mainContainer {
   width: 640px;
@@ -26,7 +45,10 @@ body {
 
 .ui {
   display: flex;
-  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 96px;
+  gap: 24px;
 }
 
 .slider {
@@ -62,16 +84,49 @@ body {
   cursor: pointer;
 }
 
-.gridSizeContainer {
+.gridSizeContainer,
+.buttonsContainer {
   display: flex;
   flex-direction: column;
 }
-
+.buttonsContainer {
+  gap: 10px;
+}
 .parentDiv {
   display: flex;
   flex: 1;
 }
 
 .childDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
+}
+
+.utils {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: end;
+}
+
+#clearCanvasButton {
+  height: 30px;
+  width: 100px;
+  border-radius: 8px;
+  background-color: aqua;
+}
+
+.buttonsContainer button {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border-color: #d8c5a8;
+  flex-shrink: 0;
+}
+
+.selected {
+  outline: 3px solid rgba(221, 168, 135, 0.8);
+  outline-offset: 3px;
 }

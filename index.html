@@ -6,21 +6,34 @@
     <title>Etch-a-Sketch</title>
     <script type="module" src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="ui"></div>
-    <div class="mainContainer"></div>
+    <div class="canvas">
+      <h1 class="title">Etch A Sketch</h1>
+      <div class="mainContainer"></div>
+    </div>
     <div class="ui">
-      <div class="gridSizeContainter">
-        <div id="gridSizeText"></div>
-        <input
-          type="range"
-          min="1"
-          max="100"
-          value="16"
-          class="slider"
-          id="gridSizeSlider"
-        />
+      <div class="buttonsContainer"></div>
+      <div class="utils">
+        <div class="gridSizeContainter">
+          <div id="gridSizeText"></div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="16"
+            class="slider"
+            id="gridSizeSlider"
+          />
+        </div>
+        <button id="clearCanvasButton" aria-label="Clear">Clear Canvas</button>
       </div>
     </div>
   </body>
